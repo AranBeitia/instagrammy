@@ -32,18 +32,29 @@ ul {
 }
 
 .container {
+  margin: auto;
+  max-width: 55rem;
   min-height: 100%;
   overflow: hidden;
-  margin: 5rem auto 0;
-  max-width: 55rem;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
 }
 
 .logo {
   height: 8rem;
 }
+.logo--small {
+  height: 4rem;
+}
 
 .logo-store {
-  height: 40px;
+  height: 2.5rem;
 }
 
 .box {
@@ -55,10 +66,6 @@ ul {
   border-radius: 2px;
 }
 
-form {
-  outline: 1px solid red;
-}
-
 .input {
   background: #fafafa;
   border: 1px solid #dbdbdb;
@@ -68,6 +75,9 @@ form {
   overflow: hidden;
   padding: 9px 0 7px 8px;
   text-overflow: ellipsis;
+}
+.input__search {
+  max-width: 220px;
 }
 
 .button {
@@ -99,6 +109,10 @@ form {
   display: flex;
 }
 
+.flex-inline {
+  display: inline-flex;
+}
+
 .flex-center {
   display: flex;
   justify-content: center;
@@ -124,6 +138,22 @@ form {
   flex-grow: 1;
 }
 
+.text-center {
+  text-align: center;
+}
+
+.py-1 {
+  padding: 1rem 0;
+}
+
+.color-facebook {
+  color: #385085;
+}
+
+.color-success {
+  color: #0095f6;
+}
+
 .hide-in-mobile {
   display: block;
 }
@@ -135,7 +165,7 @@ form {
 
 @font-face {
   font-family: "ico-instagram";
-  src: url("../fonts/fonts/ico-instagram.ttf?afmejc") format("truetype"), url("../fonts/fonts/ico-instagram.woff?afmejc") format("woff"), url("../fonts/fonts/ico-instagram.svg?afmejc#ico-instagram") format("svg");
+  src: url("../assets/fonts/ico-instagram.ttf?8c0okq") format("truetype"), url("../assets/fonts/ico-instagram.woff?8c0okq") format("woff"), url("../assets/fonts/ico-instagram.svg?8c0okq#ico-instagram") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -143,7 +173,6 @@ form {
 [class^=icon-], [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "ico-instagram" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -154,11 +183,43 @@ form {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-facebook:before {
-  content: "";
+.icon-compass-full:before {
+  content: "";
 }
 
-.facebook-login {
-  color: red;
-  padding: 1rem 0;
+.icon-compass:before {
+  content: "";
+}
+
+.icon-heart-full:before {
+  content: "";
+}
+
+.icon-heart-like:before {
+  content: "";
+  color: #d7443e;
+}
+
+.icon-heart:before {
+  content: "";
+}
+
+.icon-home-full:before {
+  content: "";
+}
+
+.icon-home:before {
+  content: "";
+}
+
+.icon-send-full:before {
+  content: "";
+}
+
+.icon-send:before {
+  content: "";
+}
+
+.icon-facebook:before {
+  content: "";
 }/*# sourceMappingURL=main.css.map */

@@ -8,24 +8,32 @@
   <title>Instagrammy Home</title>
 </head>
 <body>
-  <header>
-    <h1>Aran.Triple</h1>
-    <span>add</span>
-    <span>burguer</span>
-  </header>
-  <main>
-    grid * 12
-  </main>
-  <footer>
+  <header class="header">
+    <img class="logo--small" src="./assets/img/Instagram-Logo.png" alt="Instagram logo" >
+    <input type="text" class="input input__search" placeholder="search">
     <nav>
-      <ul>
-        <li>home</li>
-        <li>search</li>
-        <li>add</li>
-        <li>like</li>
-        <li>profile</li>
+      <ul class="flex-inline">
+        <li><span class="icon-home-full"></span></li>
+        <li><span class="icon-send"></span></li>
+        <li><span class="icon-compass"></span></li>
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-facebook"></span></li>
       </ul>
     </nav>
-  </footer>
+  </header>
+  <main class="container flex">
+    <article>
+      <section class="box">
+        carousel avatares
+      </section>
+      <section class="box">
+        posts
+      </section>
+    </article>
+    <aside>
+      <div>avatar - nickname - name</div>
+      <div>suggestions list</div>
+    </aside>
+  </main>
 </body>
 </html>
