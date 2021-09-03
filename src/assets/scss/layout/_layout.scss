@@ -5,12 +5,22 @@
   max-width: var.$width-desktop;
   min-height: 100%;
   overflow: hidden;
-
-  &__main {
-    margin-top: var.$height-header;
-  }
 }
 
-aside {
-  outline: 1px solid red;
+.column {
+  @include var.flex(flex);
+  margin-top: var.$height-header;
+
+  &__main {
+    width: 70%;
+    
+    @include var.is-tablet {
+      width: 100%;
+    }
+  }
+
+  &__second {
+    width: 25%;
+    outline: 2px dotted blue;
+  }
 }

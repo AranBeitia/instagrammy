@@ -10,6 +10,10 @@
   background-color: var.$color-white;
   border-bottom: 1px solid var.$color-grey-border;
 
+  @include var.is-tablet {
+    border: none;
+  }
+
   &__inner {
     @include var.flex(flex, between, center);
     max-width: var.$width-desktop;
