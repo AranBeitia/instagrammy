@@ -5,4 +5,12 @@
   max-width: var.$width-desktop;
   min-height: 100%;
   overflow: hidden;
+
+  &__main {
+    margin-top: var.$height-header;
+  }
+}
+
+aside {
+  outline: 1px solid red;
 }

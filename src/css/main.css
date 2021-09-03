@@ -31,35 +31,80 @@ ul {
   padding-left: 0;
 }
 
+.grid-2-to-1 {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.grid-2-to-1 {
+  grid-template-columns: 2fr 1fr;
+}
+
 .container {
   margin: auto;
   max-width: 55rem;
   min-height: 100%;
   overflow: hidden;
 }
+.container__main {
+  margin-top: 3rem;
+}
+
+aside {
+  outline: 1px solid red;
+}
 
 .header {
+  position: fixed;
+  top: 0;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-height: 3rem;
+  background-color: #ffffff;
+  border-bottom: 1px solid #dbdbdb;
+}
+.header__inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #ffffff;
-  border-bottom: 1px solid #dbdbdb;
+  max-width: 55rem;
+  width: 100%;
+}
+
+.menu {
+  display: flex;
+}
+.menu li:not(:last-child) {
+  padding-right: 1rem;
 }
 
 .logo {
   height: 8rem;
 }
 .logo--small {
-  height: 4rem;
+  height: 3rem;
 }
 
 .logo-store {
   height: 2.5rem;
 }
 
+.image {
+  display: block;
+  width: 100%;
+}
+.image__avatar {
+  max-width: 4.2rem;
+}
+.image__avatar.--small {
+  max-width: 3rem;
+}
+
 .box {
   margin-top: 1rem;
-  padding: 20px 40px;
   min-width: 23rem;
   background-color: #ffffff;
   border: 1px solid #dbdbdb;
@@ -129,6 +174,11 @@ ul {
   justify-content: space-around;
 }
 
+.flex-between {
+  display: flex;
+  justify-content: space-between;
+}
+
 .flex-column {
   display: flex;
   flex-direction: column;
@@ -144,6 +194,10 @@ ul {
 
 .py-1 {
   padding: 1rem 0;
+}
+
+.p-2 {
+  padding: 1.3rem 2.5rem;
 }
 
 .color-facebook {
@@ -165,7 +219,7 @@ ul {
 
 @font-face {
   font-family: "ico-instagram";
-  src: url("../assets/fonts/ico-instagram.ttf?8c0okq") format("truetype"), url("../assets/fonts/ico-instagram.woff?8c0okq") format("woff"), url("../assets/fonts/ico-instagram.svg?8c0okq#ico-instagram") format("svg");
+  src: url("../assets/fonts/ico-instagram.ttf?ew4rwv") format("truetype"), url("../assets/fonts/ico-instagram.woff?ew4rwv") format("woff"), url("../assets/fonts/ico-instagram.svg?ew4rwv#ico-instagram") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -181,6 +235,11 @@ ul {
   /* Better Font Rendering =========== */
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-avatar:before {
+  content: "";
+  color: #8e8e8e;
 }
 
 .icon-compass-full:before {

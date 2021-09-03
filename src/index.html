@@ -9,25 +9,115 @@
 </head>
 <body>
   <header class="header">
-    <img class="logo--small" src="./assets/img/Instagram-Logo.png" alt="Instagram logo" >
-    <input type="text" class="input input__search" placeholder="search">
-    <nav>
-      <ul class="flex-inline">
-        <li><span class="icon-home-full"></span></li>
-        <li><span class="icon-send"></span></li>
-        <li><span class="icon-compass"></span></li>
-        <li><span class="icon-heart"></span></li>
-        <li><span class="icon-facebook"></span></li>
-      </ul>
-    </nav>
+    <div class="header__inner">
+      <img class="logo--small" src="./assets/img/Instagram-Logo.png" alt="Instagram logo" >
+      <input type="text" class="input input__search" placeholder="search">
+      <nav>
+        <ul class="menu">
+          <li><span class="icon-home-full"></span></li>
+          <li><span class="icon-send"></span></li>
+          <li><span class="icon-compass"></span></li>
+          <li><span class="icon-heart"></span></li>
+          <li><span class="icon-avatar"></span></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main class="container flex">
+  <main class="container container__main grid-2-to-1">
     <article>
       <section class="box">
-        carousel avatares
+        <ul class="flex flex-around">
+          <li><img class="image image__avatar" src="./assets/img/profile/profile01.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile02.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile03.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile04.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile05.png" alt=""></li>
+          <li><img class="image image__avatar" src="./assets/img/profile/profile01.png" alt=""></li>
+        </ul>
       </section>
       <section class="box">
-        posts
+        <header class="flex-between">
+          <div class="flex">
+            <img class="image image__avatar --small" src="./assets/img/profile/profile03.png" alt="">
+            <p>nickname</p>
+          </div>
+          <span>...</span>
+        </header>
+        <article>
+          <img class="image" src="./assets/img/post/post01.jpg" alt="">
+        </article>
+        <footer>
+          <nav class="flex-between">
+            <div class="flex">
+              <span class="icon-heart"></span>
+              <span class="icon-compass"></span>
+              <span class="icon-send"></span>
+            </div>
+            <span class="icon-home"></span>
+          </nav>
+          <p>170 likes</p>
+          <span>comments</span>
+          <div class="flex">
+            <span class="icon-avatar"></span>
+            <input type="text" placeholder="Add a comment...">
+          </div>
+        </footer>
+      </section>
+      <section class="box">
+        <header class="flex-between">
+          <div class="flex">
+            <img class="image image__avatar --small" src="./assets/img/profile/profile04.png" alt="">
+            <p>nickname</p>
+          </div>
+          <span>...</span>
+        </header>
+        <article>
+          <img class="image" src="./assets/img/post/post02.jpg" alt="">
+        </article>
+        <footer>
+          <nav class="flex-between">
+            <div class="flex">
+              <span class="icon-heart"></span>
+              <span class="icon-compass"></span>
+              <span class="icon-send"></span>
+            </div>
+            <span class="icon-home"></span>
+          </nav>
+          <p>170 likes</p>
+          <span>comments</span>
+          <div class="flex">
+            <span class="icon-avatar"></span>
+            <input type="text" placeholder="Add a comment...">
+          </div>
+        </footer>
+      </section>
+      <section class="box">
+        <header class="flex-between">
+          <div class="flex">
+            <img class="image image__avatar --small" src="./assets/img/profile/profile05.png" alt="">
+            <p>nickname</p>
+          </div>
+          <span>...</span>
+        </header>
+        <article>
+          <img class="image" src="./assets/img/post/post03.jpg" alt="">
+        </article>
+        <footer>
+          <nav class="flex-between">
+            <div class="flex">
+              <span class="icon-heart"></span>
+              <span class="icon-compass"></span>
+              <span class="icon-send"></span>
+            </div>
+            <span class="icon-home"></span>
+          </nav>
+          <p>170 likes</p>
+          <span>comments</span>
+          <div class="flex">
+            <span class="icon-avatar"></span>
+            <input type="text" placeholder="Add a comment...">
+          </div>
+        </footer>
       </section>
     </article>
     <aside>

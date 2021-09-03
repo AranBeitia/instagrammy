@@ -1,0 +1,7 @@
+.menu {
+  display: flex;
+
+  & li:not(:last-child) {
+    padding-right: 1rem;
+  }
+}

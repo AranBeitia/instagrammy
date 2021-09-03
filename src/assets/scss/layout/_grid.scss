@@ -1,0 +1,9 @@
+%grid {
+  display: grid;
+  grid-gap: 1rem;
+}
+
+.grid-2-to-1 {
+  @extend %grid;
+  grid-template-columns: 2fr 1fr;
+}
