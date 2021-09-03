@@ -6,4 +6,9 @@
   & li:not(:last-child) {
     padding-right: 1rem;
   }
+
+  &__mobile {
+    @include mixin.flex(flex, evenly);
+    padding: 1rem;
+  }
 }

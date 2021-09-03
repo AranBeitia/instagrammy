@@ -7,10 +7,12 @@
   margin: .2rem 0;
   outline: 0;
   overflow: hidden;
-  padding: 9px 0 7px 8px;
+  padding: .5rem 0 .5rem .5rem;
+  text-align: center;
+  font-size: 1rem;
   text-overflow: ellipsis;
 
   &__search {
-    max-width: 220px;
+    max-width: 14rem;
   }
 }

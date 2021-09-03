@@ -6,7 +6,7 @@
   overflow: hidden;
   @include var.flex(flex, center, center);
   width: 100%;
-  max-height: var.$height-header;
+  min-height: var.$height-header;
   background-color: var.$color-white;
   border-bottom: 1px solid var.$color-grey-border;
 
@@ -18,5 +18,9 @@
     @include var.flex(flex, between, center);
     max-width: var.$width-desktop;
     width: 100%;
+
+    @include var.is-tablet {
+      padding: 0 1rem;
+    }
   }
 }

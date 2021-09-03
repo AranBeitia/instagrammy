@@ -11,9 +11,13 @@
   @include var.flex(flex);
   margin-top: var.$height-header;
 
+  @include var.is-tablet {
+    margin-top: var.$height-header + 2rem;
+  }
+
   &__main {
     width: 70%;
-    
+
     @include var.is-tablet {
       width: 100%;
     }
