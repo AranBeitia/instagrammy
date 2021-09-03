@@ -1,5 +1,7 @@
+@use '../abstract' as mixin;
+
 .menu {
-  display: flex;
+  @include mixin.flex(flex);
 
   & li:not(:last-child) {
     padding-right: 1rem;
