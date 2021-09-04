@@ -31,12 +31,16 @@ p {
   padding: 1rem 0;
 }
 
+img {
+  width: 100%;
+}
+
 ul {
   list-style: none;
   padding-left: 0;
 }
 
-.grid-2-to-1 {
+.grid-3-to-3, .grid-2-to-1 {
   display: grid;
   grid-gap: 1rem;
 }
@@ -48,6 +52,10 @@ ul {
   .grid-2-to-1 {
     grid-template-columns: auto;
   }
+}
+
+.grid-3-to-3 {
+  grid-template-columns: repeat(3, 1fr);
 }
 
 .container {
