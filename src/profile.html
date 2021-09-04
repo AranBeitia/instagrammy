@@ -5,25 +5,45 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/main.css">
-  <title>Instagrammy Home</title>
+  <link rel="icon" sizes="192x192" href="./assets/img/logo-ico.png">
+  <title>Instagrammy Profile</title>
 </head>
 <body>
-  <header>
-    <h1>Aran.Triple</h1>
-    <span>add</span>
-    <span>burguer</span>
+  <header class="header">
+    <div class="header__inner">
+      <span class="icon-compass hide-in-web"></span>
+      <a href="./">
+        <img class="logo--small" src="./assets/img/Instagram-Logo.png" alt="Instagram logo" >
+      </a>
+      <input type="text" class="[ input input__search ] hide-in-mobile" placeholder="Search">
+      <nav>
+        <ul class="menu">
+          <li class="hide-in-mobile"><span class="icon-home"></span></li>
+          <li><span class="icon-send"></span></li>
+          <li class="hide-in-mobile"><span class="icon-compass"></span></li>
+          <li class="hide-in-mobile"><span class="icon-heart"></span></li>
+          <li class="hide-in-mobile"><a href="./profile.html"><span class="icon-avatar"></span></a></li>
+        </ul>
+      </nav>
+    </div>
   </header>
-  <main>
-    grid * 12
+  <main class="container column">
+    <header>
+      <div>image profile</div>
+      <div>datos profile</div>
+    </header>
+    <article>
+      grid
+    </article>
   </main>
-  <footer>
+  <footer class="footer hide-in-web">
     <nav>
-      <ul>
-        <li>home</li>
-        <li>search</li>
-        <li>add</li>
-        <li>like</li>
-        <li>profile</li>
+      <ul class="menu menu__mobile">
+        <li><span class="icon-home"></span></li>
+        <li><span class="icon-send"></span></li>
+        <li><span class="icon-compass"></span></li>
+        <li><span class="icon-heart"></span></li>
+        <li><span class="icon-avatar"></span></li>
       </ul>
     </nav>
   </footer>

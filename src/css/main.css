@@ -163,7 +163,6 @@ ul {
 }
 .image__avatar {
   width: 4rem;
-  padding: 0 0.5rem;
 }
 @media screen and (max-width: 875px) {
   .image__avatar {
@@ -171,8 +170,7 @@ ul {
   }
 }
 .image__avatar.--small {
-  width: 3rem;
-  height: 3rem;
+  width: 2.5rem;
 }
 
 [class^=icon-] {
@@ -289,6 +287,10 @@ ul {
   padding: 1rem 0;
 }
 
+.p-05 {
+  padding: 0.5rem;
+}
+
 .p-1 {
   padding: 1rem;
 }
@@ -301,6 +303,14 @@ ul {
   margin-top: 1rem;
 }
 
+.my-05 {
+  margin: 0 0.5rem;
+}
+
+.my-1 {
+  margin: 0 1rem;
+}
+
 .color-facebook {
   color: #385085;
 }
@@ -311,6 +321,10 @@ ul {
 
 .color-grey-dark {
   color: #8e8e8e;
+}
+
+.border-top {
+  border-top: 1px solid #dbdbdb;
 }
 
 .hide-in-mobile {
