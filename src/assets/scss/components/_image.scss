@@ -16,7 +16,10 @@ $size-small: 2.5rem;
 
     &.--small {
       width: $size-small;
-      // height: $size-small;
+    }
+
+    &.--tiny {
+      width: $size-small - 1;
     }
   }
 }

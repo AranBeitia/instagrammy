@@ -81,6 +81,7 @@ To deliver this project you must follow the steps indicated in the document:
   CSS preprocessors are scripting languages that extend the default capabilities of CSS. They enable us to use logic in our CSS code, such as variables, nesting, inheritance, mixins, functions, and mathematical operations.
 
 - **What does a pre-processor have to do with SASS?**
+  SASS is a preprocessor
 
 - **Why use SASS?**
   Sass lets you use features that do not exist in CSS, like variables, nested rules, mixins, imports, inheritance, built-in functions, and other stuff.
@@ -150,5 +151,12 @@ To deliver this project you must follow the steps indicated in the document:
 
 - **How can we import other CSS/SASS files in SASS? Give an example**
 
+
 - **Explain the concept of inheritance in SASS.**
+  In Sass, @extend is used to share a set of CSS properties from one selector to another. In complicated CSS where many classes are put together, duplication of properties may occurs. ... The @extend features makes your code less and facilitates you to rewrite it repeatedly.
+
 - **Why use @extend? Give an example**
+  The @extend directive helps keep your Sass code very clean.
+  %grid { display: grid; grid-gap: 1rem;}
+  .grid-2-columns { @extend %grid; color: red;}
+  .grid-1-column { @extend %grid; color: blue; }
