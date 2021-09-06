@@ -180,6 +180,9 @@ ul {
     width: 5.5rem;
   }
 }
+.image__avatar.--big {
+  width: 12rem;
+}
 .image__avatar.--small {
   width: 2.5rem;
 }

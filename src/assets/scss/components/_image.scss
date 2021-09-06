@@ -8,10 +8,13 @@ $size-small: 2.5rem;
 
   &__avatar {
     width: $size;
-    // margin: 0 0.5rem;
 
     @include var.is-tablet {
       width: $size + 1.5;
+    }
+
+    &.--big {
+      width: $size * 3;
     }
 
     &.--small {
